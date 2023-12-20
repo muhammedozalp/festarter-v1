@@ -1,6 +1,7 @@
 {
-  "name": "festarter",
-  "description": "festarter",
+  "name": "@festarter/create-festarter-v1",
+  "description": "front end starter v1",
+  "bin": "./bin/cli.js",
   "version": "0.0.1",
   "sideEffects": [
     "*.css",
@@ -82,7 +83,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/muhammedozalp/festarter-v1.git"
+    "url": "git+https://github.com/muhammedozalp/festarter-v1.git"
   },
   "keywords": [],
   "author": {
