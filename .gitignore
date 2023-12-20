@@ -1,0 +1,7 @@
+* Followings are dynamically created dirs
+/node_modules
+/dist
+/_src
+/_public
+.env
+.vscode

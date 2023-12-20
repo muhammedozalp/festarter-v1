@@ -1,0 +1,11 @@
+{# <h1>Muhasebe Programı</h1>
+<p>{{ langRequest }}</p>
+<p>{{ langView }}</p>
+<p>content component</p> #}
+
+{% include "_includes/component/page-title.njk" %}
+
+{# TODO content bölümü de aslında her biri componentten gelmesi gereken parçalardan oluşuyor
+bilahere bunu da componentlere ayırmalıyım #}
+{# {% include "_includes/site/pages/" + langView + "/" + page + "/content.njk" %} #}
+{% include "_includes/pages/services/content.njk" %}

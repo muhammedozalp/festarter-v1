@@ -1,0 +1,42 @@
+{% include '_includes/layout/base/header/top-bar.njk' %}
+
+{# <!-- Header
+============================================= --> #}
+<header id="header" class="header-size-sm" data-sticky-shrink="false">
+    {# <!-- Logo and contact info bar
+    ============================================= --> #}
+    {% include '_includes/layout/base/header/logo-bar.njk' %}
+    {# <!-- #logo end --> #}
+
+    <div id="header-wrap">
+        <div class="container">
+            <div class="header-row justify-content-between flex-row-reverse flex-lg-row justify-content-lg-center">
+
+                <div class="header-misc">
+                    {# <!-- Top Search Icon
+                    ============================================= --> #}
+                    {% include '_includes/layout/base/header/top-search-icon.njk' %}
+                    {# <!-- #top-search icon end --> #}
+                </div>
+
+                {# <!-- Hamburger Menu Icon
+                ============================================= --> #}
+                {% include '_includes/layout/base/header/hamburger-menu-icon.njk' %}
+                {# <!-- Hamburger Menu Icon --> #}
+
+                {# <!-- Primary Menu Navigation
+                ============================================= --> #}
+                {% include '_includes/layout/base/header/menu-primary.njk' %}
+                {# <!-- #primary-menu end --> #}
+
+                {# <!-- Top Search Form
+                ============================================= --> #}
+                {% include '_includes/layout/base/header/top-search-form.njk' %}
+                {# <!-- #top-search form end --> #}
+
+            </div>
+        </div>
+    </div>
+    <div class="header-wrap-clone"></div>
+</header>
+{# <!-- #header end --> #}

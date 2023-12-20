@@ -1,0 +1,100 @@
+{# <!-- JavaScripts
+============================================= --> #}
+<script src="js/functions.js"></script>
+
+{# <!-- Charts JS
+============================================= --> #}
+<script src="js/chart.js"></script>
+<script src="js/chart-utils.js"></script>
+<script src="js/components/moment.js"></script>
+
+{# <!-- Main Particles Js
+============================================= --> #}
+<script src="js/particles/particles.min.js"></script>
+<script src="js/particles/particles-line.js"></script>
+{# <!-- Particles Line --> #}
+
+<script>
+
+    {# // ============================================
+    // As of Chart.js v2.5.0
+    // http://www.chartjs.org/docs
+    // ============================================ #}
+
+    var chart    = document.getElementById('chart-0').getContext('2d'),
+        gradient = chart.createLinearGradient(0, 0, 0, 300);
+
+    gradient.addColorStop(0, 'rgba(254,150,3, .5)');
+    gradient.addColorStop(0.5, 'rgba(254,150,3, 0)');
+    gradient.addColorStop(1, 'rgba(254,150,3, 0)');
+
+
+    var data  = {
+        labels: [ '2015', '2016', '2017', '2018', '2019', '2020' ],
+        datasets: [{
+            label: 'Data',
+            backgroundColor: gradient,
+            pointBackgroundColor: 'white',
+            borderWidth: 2,
+            borderColor: '#fE9603',
+            pointRadius: 3,
+            pointHoverRadius: 3,
+            pointHoverBorderWidth: 3,
+            fill: true,
+            data: [30, 90, 50, 120, 100, 170]
+        }]
+    };
+
+
+    var options = {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    color: 'rgba(200, 200, 200, 0.05)',
+                    lineWidth: 1,
+                    display: false
+                }
+            }],
+            yAxes: [{
+                display: false,
+                scaleLabel: {
+                    display: false,
+                    labelString: 'Value'
+                }
+            }]
+        },
+        elements: {
+            line: {
+                tension: 0.4
+            }
+        },
+        legend: {
+            display: false
+        },
+        point: {
+            backgroundColor: 'white',
+            display: false
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontFamily: 'Poppins',
+            backgroundColor: 'rgba(0,0,0,0.7)',
+            titleFontColor: '#FFF',
+            caretSize: 5,
+            cornerRadius: 2,
+            xPadding: 10,
+            yPadding: 10
+        }
+    };
+
+
+    var chartInstance = new Chart(chart, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+
+</script>

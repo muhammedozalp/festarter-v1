@@ -1,0 +1,11 @@
+import './home.js';
+import './about-us.js';
+import './blog.js';
+import './career.js';
+import './contact.js';
+import './investors.js';
+import './projects.js';
+import './projects-2.js';
+import './projects-3.js';
+import './projects-5.js';
+import './services.js';

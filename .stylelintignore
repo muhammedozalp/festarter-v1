@@ -1,0 +1,6 @@
+bundle_analysis/**/*.css
+bundle_analysis/**/*.scss
+node_modules/**/*.css
+node_modules/**/*.scss
+src/js/library/**/*.css
+src/scss/library/font-awesome/**/*.css

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ site.lang }}">
+    <head>
+        {% include '_includes/layout/base/head-element.njk' %}
+    </head>
+
+    <body class="{{ bodyClass }}">
+
+        <!-- Document Wrapper
+        ============================================= -->
+        <div id="wrapper">
+
+            <!-- Modal -->
+            {% include '_includes/layout/base/modal.njk' %}
+
+            <!-- Header
+		    ============================================= -->
+            {% include '_includes/layout/base/header.njk' %}
+            <!-- #header end -->
+
+            {# {{ content | safe }} #}
+            {% block pagecontent %}{% endblock %}
+
+            <!-- Footer
+		    ============================================= -->
+            {% include '_includes/layout/base/footer.njk' %}
+            <!-- #footer end -->
+
+        </div><!-- #wrapper end -->
+
+        <!-- Go To Top
+        ============================================= -->
+        <div id="gotoTop" class="uil uil-angle-up"></div>
+
+        {% include '_includes/layout/base/footer-scripts.njk' %}
+
+    </body>
+</html>

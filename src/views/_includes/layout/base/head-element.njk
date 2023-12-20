@@ -1,0 +1,59 @@
+{#  NOTE
+    The following 2 meta tags *must* come first in the <head>
+    to consistently ensure proper document rendering.
+    Any other head element should come *after* these tags.
+#}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+{# NOTE Control the behavior of search engine crawling and indexing #}
+{# NOTE <!-- All Search Engines --> #}
+<meta name="robots" content="index,follow">
+{# NOTE <!-- Google Specific --> #}
+<meta name="googlebot" content="index,follow">
+
+<meta name="author" content="Muhammed Özalp">
+{# <meta name="description" content="{{ description or site.description }}"> #}
+
+{# Open graph related #}
+{# <meta property="og:title" content="{{ title or site.title or site.name }}" />
+<meta property="og:type" content="{{ type or site.type }}" />
+<meta property="og:url" content="{{ url or site.url }}" />
+<meta property="og:image" content="{{ image or site.image }}" />
+<meta property="og:site_name" content="{{ name or site.name }}" />
+<meta property="og:description" content="{{ description or site.description }}" /> #}
+
+{# <!-- Font Imports --> #}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+{# <!-- Core Style --> #}
+{# <link rel="stylesheet" href="{% webpack 'main.css' %}"> #}
+{# <link rel="stylesheet" href="{% static './style.css' %}"> #}
+{# <link rel="stylesheet" href="/style.css"> #}
+
+{#
+    TODO external css dosyaları webpack shortcodu ile manifestten getirilecek
+#}
+<!-- Font Icons -->
+{# <link rel="stylesheet" href="css/font-icons.css"> #}
+{# <link rel="stylesheet" href="/css/font-icons.css"> #}
+
+{# <!-- Plugins/Components CSS --> #}
+{# <link rel="stylesheet" href="/css/swiper.css"> #}
+
+{# <!-- Niche Demos --> #}
+{# <link rel="stylesheet" href="/demos/construction/construction.css"> #}
+
+{# <!-- Custom CSS --> #}
+{# <link rel="stylesheet" href="css/custom.css"> #}
+{# <link rel="stylesheet" href="/css/custom.css"> #}
+
+{# <!-- Document Title
+============================================= --> #}
+{# <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title or site.name}}{% endif %}</title> #}

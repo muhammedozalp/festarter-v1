@@ -1,0 +1,52 @@
+{# <!-- Top Bar
+============================================= --> #}
+<div id="top-bar">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-auto">
+
+                <!-- Top Social
+                ============================================= -->
+                <ul id="top-social">
+                    
+                    {# {% set abc = require('./dnm.js') %} #}
+
+                    {# <h1>{{ 'links' | getData }}</h1> #}
+                    <h1>_{{ getData('parent.firstChild', 'component/links.js') }}</h1>
+                    {# <h1>_{{ getData('homeText', 'component/links.js') }}</h1> #}
+                    {# <li><a href="#" class="h-bg-facebook"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a></li> #}
+                    <li><a href="#" class="h-bg-facebook"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span class="ts-text">{{ abc }}</span></a></li>
+                    <li><a href="#" class="h-bg-x-twitter"><span class="ts-icon"><i class="fa-brands fa-x-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+                    <li><a href="#" class="h-bg-dribbble"><span class="ts-icon"><i class="fa-brands fa-dribbble"></i></span><span class="ts-text">Dribbble</span></a></li>
+                    <li><a href="#" class="h-bg-github"><span class="ts-icon"><i class="fa-brands fa-github"></i></span><span class="ts-text">Github</span></a></li>
+                    <li><a href="#" class="h-bg-pinterest"><span class="ts-icon"><i class="fa-brands fa-pinterest-p"></i></span><span class="ts-text">Pinterest</span></a></li>
+                    <li><a href="#" class="h-bg-instagram"><span class="ts-icon"><i class="fa-brands fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
+                </ul><!-- #top-social end -->
+
+            </div>
+
+            <div class="col-12 col-md-auto">
+
+                <!-- Top Links
+                ============================================= -->
+                <div class="top-links">
+                    <ul class="top-links-container">
+                        <li class="top-links-item"><a href="#">Locations</a>
+                            <ul class="top-links-sub-menu">
+                                <li class="top-links-item"><a href="#">San Francisco</a></li>
+                                <li class="top-links-item"><a href="#">London</a></li>
+                                <li class="top-links-item"><a href="#">Amsterdam</a></li>
+                            </ul>
+                        </li>
+                        <li class="top-links-item"><a href="faqs.html">FAQs</a></li>
+                        <li class="top-links-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- .top-links end -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{# <!-- #top-bar end --> #}

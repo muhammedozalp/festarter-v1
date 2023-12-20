@@ -1,0 +1,31 @@
+{
+    "extends": "stylelint-config-standard-scss",
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "indentation": [ 4, { "baseIndentLevel": 1 } ],
+        "alpha-value-notation": false,
+        "block-closing-brace-empty-line-after": false,
+        "block-closing-brace-empty-line-before": false,
+        "block-opening-brace-space-after": false,
+        "block-opening-brace-space-before": false,
+        "color-function-notation": false,
+        "color-hex-case": false,
+        "color-hex-length": false,
+        "comment-whitespace-inside": false,
+        "declaration-block-trailing-semicolon": false,
+        "declaration-empty-line-before": false,
+        "length-zero-no-unit": false,
+        "max-empty-lines": false,
+        "number-leading-zero": false,
+        "no-missing-end-of-source-newline": false,
+        "rule-empty-line-before": false,
+        "selector-class-pattern": false,
+        "selector-combinator-space-after": false,
+        "selector-combinator-space-before": false,
+        "scss/double-slash-comment-empty-line-before": false,
+        "shorthand-property-no-redundant-values": false,
+        "string-quotes": false
+    }
+}

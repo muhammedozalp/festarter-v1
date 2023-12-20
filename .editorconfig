@@ -1,0 +1,38 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root=true
+
+[*]
+indent_style=space
+indent_size=4
+tab_width=8
+end_of_line=crlf
+charset=utf-8
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+[{composer.lock,.babelrc,.stylelintrc,.eslintrc,jest.config,*.json,*.jsb3,*.jsb2,*.bowerrc}]
+indent_style=space
+indent_size=2
+
+[src/template/data/**.json]
+indent_size=4
+
+[{*.cql,*.ddl,*.sql}]
+indent_style=space
+indent_size=2
+
+[*.js]
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.ts]
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.yml]
+indent_size = 2
