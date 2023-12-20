@@ -17,7 +17,7 @@ const runCommand = (command) => {
 };
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/muhammedozalp/festarter-v1 ${repoName}`;
+const gitCheckoutCommand = `git clone https://github.com/muhammedozalp/festarter-v1.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn`;
 
 console.log(`Cloning the repository with the name ${repoName}`);
